@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "MuseoModerno", cursive;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  font-family: "MuseoModerno", cursive;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  background: black;
+  padding: 30px 13%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.firstname {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.lastname {
+  background: #5bbcff;
+  color: #000000;
+  border-radius: 1vw;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 0 1vw 0 1vw;
+  display: inline-block;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation a {
+  position: relative;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  margin-left: 45px;
+}
+
+.navigation a::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  border-radius: 8px;
+  transition: all ease 0.45s;
+}
+
+.navigation a:hover::after {
+  width: 100%;
+}
+
+.content {
+  margin-top: 150px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  width: 100%;
+}
+
+.content h1 {
+  margin-bottom: 20px;
+}
+
+.content p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea,
+.form-group input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #5bbcff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0396ff;
+}
+
+.bt_batal {
+  background-color: #ff0000;
+}
+
+.bt_detail,
+.bt_kembali {
+  padding: 5px 10px;
+  margin: 2px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.bt_detail {
+  background-color: #5bbcff;
+}
+
+.bt_kembali {
+  background-color: #5bbcff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+td:last-child {
+  white-space: nowrap;
+  text-align: center;
+}
+
+thead {
+  background-color: #04cefb;
+}
+
+th {
+  background-color: #f2f2f2;
+}
